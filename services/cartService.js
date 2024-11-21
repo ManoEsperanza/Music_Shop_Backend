@@ -6,7 +6,7 @@ const cartData = require('../data/cartData');
  * @returns {Promise<Array>} - List of cart items with product details
  */
 async function getCartContents(userId) {
-  return await cartData.getCartContents(userId);
+  return await cartData.getCartContents(userId); 
 }
 
 /**
