@@ -1,6 +1,7 @@
 const productData = require('../data/productData');
 
 async function getAllProducts() {
+  console.log('b')
   return await productData.getAllProducts();
 }
 

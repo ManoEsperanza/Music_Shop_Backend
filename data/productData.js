@@ -1,7 +1,9 @@
 const pool = require('../database');
 
 async function getAllProducts() {
-  const [rows] = await pool.query('SELECT id, name, CAST(price AS DOUBLE) AS price, image FROM products');
+  console.log('c')
+  const [rows] = await pool.query('SELECT id, name, CAST(price AS DOUBLE) AS price, image FROM products;');
+ console.log(rows)
   return rows;
 }  
 

@@ -1,14 +1,15 @@
-const pool = require('./database');
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
-app.use('/api/users', userRoutes);
+console.log(process.env)
+const pool = require('./database');
+// app.use('/api/users', userRoutes);
 const productsRouter = require('./routes/products');
 const userRoutes = require('./routes/users');
 const cartRoutes = require('./routes/cart');
 
 // make sure this comes AFTER dotenv config
-const productsRouter = require('./routes/products')
+// const productsRouter = require('./routes/products')
 
 const app = express();
 

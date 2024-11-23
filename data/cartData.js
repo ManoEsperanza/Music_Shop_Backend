@@ -1,5 +1,7 @@
 const pool = require('../database');
 
+
+
 // Fetch cart contents for a user
 async function getCartContents(userId) {
   const [rows] = await pool.query(

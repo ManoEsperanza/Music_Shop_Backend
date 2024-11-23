@@ -5,7 +5,9 @@ const productService = require('../services/productService');
 // GET all products
 router.get('/', async (req, res) => {
   try {
+    console.log('a')
     const products = await productService.getAllProducts();
+    console.log(products)
     res.json(products);
   } catch (error) {
     res.status(500).json({ message: error.message });
