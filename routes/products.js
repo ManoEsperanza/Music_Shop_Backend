@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
 
   try {
     const products = await productService.getAllProducts();
-    console.log(products)
+    // console.log(products)
     res.json(products);
   } catch (error) {
     res.status(500).json({ message: error.message });
